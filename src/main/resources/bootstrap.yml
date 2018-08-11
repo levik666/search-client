@@ -1,0 +1,30 @@
+server:
+    context-path: /
+    port: ${PORT:7777}
+
+spring:
+    application:
+        name: ${APPLICATION_NAME:search-client}
+    profiles:
+        active: ${APPLICATION_ACTIVE_PROFILE:prod}
+    thymeleaf:
+        cache: false
+        enabled: true
+        prefix: classpath:/templates/
+        suffix: .html
+
+search:
+  schema: ${SEARCH_SCHEMA:http}
+  host: ${SEARCH_HOST:localhost}
+  port: ${SEARCH_PORT:5555}
+
+management:
+    context-path: /service
+    health:
+        defaults:
+            enabled: true
+        diskspace:
+            enabled: true
+    info:
+        git:
+            mode: full

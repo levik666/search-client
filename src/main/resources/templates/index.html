@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Search Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" th:href="@{/styles.css}" href="../styles.css"/>
+    </head>
+<body>
+
+<div class="container">
+    <form action="#" th:action="@{/search}" th:object="${search}" method="post">
+        <input type="text" th:field="*{tokens}" placeholder="Search..." required>
+        <input type="submit" value="Search">
+    </form>
+
+    <div class="box" th:if="${result.keys != null}">
+        <ul>
+            <th:block th:object="${result}" th:each="item : ${result.keys}">
+                <li th:text="${item}"/>
+            </th:block>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
