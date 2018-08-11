@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased or Todo]
+- Add better UI
 - Add pagination. 
 - Add docker-compose.
 - Add gradle task for docker.
