@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 - Add docker-compose.
 - Add gradle task for docker.
 - Add tests.
+- Add handling error cases.
 
 ## [0.0.1]
 Add spring boot 2.0.3.RELEASE.    

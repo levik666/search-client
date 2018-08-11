@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -Dserver.port=$PORT -DSEARCH_HOST=levik.herokuapp.com -DSEARCH_PORT=80 -jar build/libs/*.jar
