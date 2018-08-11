@@ -27,8 +27,22 @@ export SEARCH_PORT=5555
 
 ## Demo 
 
-- simple search engine deployed on heroku 
+- simple search engine deployed on heroku https://search-client.herokuapp.com/search
 - CI/CD for test and deploy use travis https://travis-ci.org/levik666/search-client
+
+##Note
+- before use search need to upload document for demo you could use the following
+
+```bash
+curl -X POST \
+  https://levik.herokuapp.com/api/v1/document/ \
+  -H 'accept: application/json' \
+  -H 'content-type: application/json' \
+  -d '{
+	"key" : "1",
+	"tokens" : "test rrr" 
+}'
+```
 
 
 
